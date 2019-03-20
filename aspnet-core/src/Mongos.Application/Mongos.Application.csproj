@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <VersionPrefix>1.0.0.0</VersionPrefix>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AssetTargetFallback>$(AssetTargetFallback);portable-net45+win8+wp8+wpa81;</AssetTargetFallback>
+    <AssemblyName>Mongos.Application</AssemblyName>
+    <PackageId>Mongos.Application</PackageId>
+    <GenerateAssemblyConfigurationAttribute>false</GenerateAssemblyConfigurationAttribute>
+    <GenerateAssemblyCompanyAttribute>false</GenerateAssemblyCompanyAttribute>
+    <GenerateAssemblyProductAttribute>false</GenerateAssemblyProductAttribute>
+    <RootNamespace>Mongos</RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\Application.Extensions.RealTimeNotification\Application.Extensions.RealTimeNotification.csproj" />
+    <ProjectReference Include="..\..\extensions\Application.Extensions.MongoDB\Application.Extensions.MongoDB.csproj" />
+    <ProjectReference Include="..\..\helpers\Application.Helpers.PushNotification\Application.Helpers.PushNotification.csproj" />
+    <ProjectReference Include="..\Mongos.Core\Mongos.Core.csproj" />
+  </ItemGroup>
+</Project>
